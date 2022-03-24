@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+      240deg,
+      /* rgba(31, 27, 65, 1) 20%,
+      rgba(31, 27, 65, 0.9) 50%,
+      rgba(31, 27, 65, 0.9) 10% */
+        rgba(31, 18, 44, 0.988) 50%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(./images/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* HEADER */
+header {
+  height: 20vh;
+  /* border: 2px solid blue; */
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+  margin-top: 60px;
+  /* border: 2px solid yellow; */
+}
+
+.logo {
+  /* border: 2px solid yellow; */
+  color: rgb(95, 95, 216);
+}
+
+.logo-name {
+  margin-left: 7px;
+  color: white;
+  font-size: 20px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 25px;
+  margin-left: 30rem;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.light a {
+  color: rgb(95, 95, 216);
+}
+
+.login {
+  display: flex;
+  gap: 20px;
+  margin-left: 2rem;
+}
+
+.login a {
+  border: 1px solid rgba(255, 255, 255, 0.411);
+  padding: 5px 0 5px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-1 a {
+  display: block;
+  background-color: transparent;
+  color: white;
+  width: 5rem;
+}
+
+.login-2 a {
+  display: block;
+  background-color: rgb(95, 95, 216);
+  border: none;
+  color: white;
+  width: 5rem;
+}
+
+.login a {
+  text-decoration: none;
+}
+
+/* HEADER HOVER */
+
+.logo:hover {
+  color: white;
+}
+.logo-name:hover {
+  color: rgb(95, 95, 216);
+}
+
+.nav li a:hover {
+  color: rgb(95, 95, 216);
+  text-decoration: underline wheat;
+}
+
+.nav .light a:hover {
+  color: white;
+  text-decoration: underline wheat;
+}
+
+.login-1 a:hover {
+  border-bottom: 2px solid wheat;
+}
+.login-2 a:hover {
+  border-bottom: 2px solid wheat;
+}
+
+/* END OF HEADER HOVER */
+/* END OF HEADER */
+
+/* SECTION */
+
+section {
+  /* border: 2px solid white; */
+  border-radius: 8px;
+  height: 25rem;
+  width: 20rem;
+  margin-right: 20px;
+  position: absolute;
+  right: 2px;
+  margin-right: 7rem;
+  background-color: white;
+}
+
+.form-vh {
+  height: 45vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.sec h2 {
+  color: rgb(48, 48, 133);
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.enter p {
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.425);
+  font-weight: bold;
+}
+
+.form {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.form-mail input {
+  width: 15rem;
+  padding: 10px 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.336);
+  padding-left: 10px;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.form-password input {
+  margin-top: 10px;
+  width: 15rem;
+  padding: 10px 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.336);
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.terms p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.425);
+  font-weight: bold;
+}
+
+.condition {
+  color: rgb(95, 95, 216);
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn button {
+  background-color: rgb(95, 95, 216);
+  padding: 8px 0 8px 0;
+  width: 7rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.dot {
+  color: rgb(95, 95, 216);
+}
+
+.btn input {
+  margin-left: 15px;
+  size: 14px;
+}
+
+.btn label {
+  color: rgb(95, 95, 216);
+  font-size: 14px;
+}
+
+.create p {
+  margin-top: 50px;
+  color: rgba(0, 0, 0, 0.425);
+  text-align: center;
+}
+
+.span-create {
+  color: rgb(95, 95, 216);
+}
+
+/* SECTION HOVER */
+.condition:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.btn button:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(158, 54, 158);
+}
+
+.span-create:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* END OF SECTION HOVER */
+
+/* END OF SECTION */
+
+/* MEDIA QUERY */
+@media (max-width: 500px) {
+  .head {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    margin-top: 60px;
+    /* border: 2px solid yellow; */
+  }
+
+  .logo {
+    /* border: 2px solid yellow; */
+    color: rgb(95, 95, 216);
+    font-size: 12px;
+  }
+
+  .logo-name {
+    margin-left: 3px;
+    padding-top: 2px;
+    color: white;
+    font-size: 10px;
+  }
+
+  .nav ul {
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 1rem;
+    font-size: 10px;
+  }
+
+  .login {
+    display: flex;
+    gap: 10px;
+    margin-left: 1rem;
+  }
+
+  .login-1 a {
+    display: block;
+    background-color: transparent;
+    color: white;
+    width: 3rem;
+    font-size: 10px;
+  }
+
+  .login-2 a {
+    display: block;
+    background-color: rgb(95, 95, 216);
+    border: none;
+    color: white;
+    width: 3rem;
+    font-size: 10px;
+  }
+
+  section {
+    border-radius: 8px;
+    height: 25rem;
+    width: 20rem;
+    /* margin: auto; */
+    /* position: absolute; */
+    /* right: 2px; */
+    margin-right: 7rem;
+    background-color: white;
+  }
+}
